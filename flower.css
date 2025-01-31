@@ -1,0 +1,65 @@
+ /* shared styles */
+
+ .display-flex{
+    display: flex;
+
+  }
+
+ 
+  /* navbar related  styles */
+
+  .menu-icon{
+    display: none;
+  }
+
+  
+ 
+.bg-color{
+ 
+  background: rgba(255, 255, 255, 1.00);
+  
+
+}
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   margin: 20px 70px;
+   
+
+
+  }
+
+  .nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+  
+  }
+.logo{
+  padding-bottom: 10px;
+}
+  .nav-item{
+    list-style: none;
+    margin: 32px;
+   
+  }
+
+  .nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+
+.button-1{
+  padding: 10px 60px ;
+  border-radius: 12px;
+  background-color: orange;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600px;
+}
+
