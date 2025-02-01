@@ -24,21 +24,60 @@
       .poppins-regular {
   font-family: "Poppins", serif;
 
+
+}
+
+.menu {
+    display: flex;
+   border-bottom: 1px solid green;
+   justify-content: space-between;
+   margin-left: 12px;
+   margin: 12px;
+   gap: 8px;
+
+}
+
+
+@media screen and (max-width:576px)  {
+    .navbar{
+        display: none;
+    }
+    
+    .banner{
+        max-width: 100%;
+    }
+
+  
+.footers{
+ display: flex;
+ flex-direction: column;
+
+}
+
+
+
+
 }
   </style>
 
 </head>
-<body class="sora-font">
+<body class="sora-font ">
     <header>
         <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+            <div class="menu lg:hidden ">
+                <div><img src="./c2-assets/Group (1).png" alt=""></div>
+                <div ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  </div>
+            </div>
             <nav class="navbar ">
-                <div class="flex place-content-between mx-40 my-8">
+                <div class=" flex place-content-between mx-40 my-8 ">
                 <div >
                 <img  class="logo"  src="./c2-assets/logo-header.png" alt="">
-               
             </div>
 
-            <div class="text-xl ">
+            <div class="text-xl nav-link">
                 <ul class="nav-links flex gap-8 ">
                     <li><a href="" class="nav-link ">Product</a></li>
                     <li ><a href="" class="nav-link ">Services</a></li>
@@ -46,7 +85,7 @@
                 </ul>
             </div>
 
-            <div class="gap-8 flex">
+            <div class=" gap-8 flex">
                 <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                   </svg>
@@ -67,7 +106,7 @@
             
 
             <!-- banner section -->
-  <div class="justify-center items-center max-w-3xl mx-72 my-12">
+  <div class="banner justify-center items-center max-w-3xl mx-auto">
             <h3 class="text-6xl font-semibold text-center">Freshness <span class="text-[#179800]">You Can
                 Count</span>  On, Prices You’ll Love!</h3>
                 <p class="text-xl font-normal text-center mt-8 mb-12">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
@@ -82,16 +121,15 @@
 
     <main>
          <!-- services -->
-          <section class=" ml-36 mt-32 mr-36">
-<h3 class="text-[#179800] font-semibold text-4xl">Services</h3>
+          <section class=" lg:ml-36 lg:mt-32 lg:mr-36 mx-3">
+<h3 class=" text-[#179800] font-semibold text-4xl mt-12 mx-3">Services</h3>
 
-<div class="grid grid-cols-1  lg:grid-cols-3 gap-4 mt-11">
+<div class="service-contianer grid  lg:grid-cols-3 gap-4 mt-11 items-center justify-center">
     <!--card container -->
 
-    
         <div class="p-8  rounded-3xl space-y-4 bg-[#EFEBE3] text-center">
             <!--  card-01 -->
-             <img  class="p-5 rounded-full bg-white" src="./c2-assets/service.png" alt="">
+             <img  class="p-5 rounded-full bg-white mx-auto" src="./c2-assets/service.png" alt="">
              <h2 class="text-2xl font-bold">24/7 Services </h2>
              <p>Lorem Ipsum is simply dummy text of the 
                 printing and typesetting industry.</p>
@@ -100,7 +138,7 @@
     
         <div class="p-8  rounded-3xl space-y-4 bg-[#EFEBE3] text-center justify-center">
             <!--  card-02 -->
-             <img  class="p-5 rounded-full bg-white " src="./c2-assets/delivery.png" alt="">
+             <img  class="p-5 rounded-full bg-white mx-auto " src="./c2-assets/delivery.png" alt="">
              <h2 class="text-2xl font-bold">Fast Delivery</h2>
              <p>Lorem Ipsum is simply dummy text of the 
                 printing and typesetting industry.</p>
@@ -109,7 +147,7 @@
     
         <div class="p-8  rounded-3xl space-y-4 bg-[#EFEBE3] text-center">
             <!-- card-03 -->
-             <img  class="p-5 rounded-full bg-white" src="./c2-assets/healthy.png" alt="">
+             <img  class="p-5 rounded-full bg-white mx-auto" src="./c2-assets/healthy.png" alt="">
              <h2 class="text-2xl font-bold">Healthy Products</h2>
              <p>Lorem Ipsum is simply dummy text of the 
                 printing and typesetting industry.</p>
@@ -123,10 +161,10 @@
 
 
 <!-- Popular Products -->
-          <section class="bg-[#EFEBE3]  mb-36px mt-36 pt-2 pb-36">
-            <h3 class="text-[#179800] font-semibold text-4xl ml-36 mt-32 mr-36
+          <section class="bg-[#EFEBE3] mb-8 lg:mb-36px lg:mt-36 mt-16 pt-2 pb-36">
+            <h3 class="text-[#179800] font-semibold text-4xl lg:ml-36 lg:mt-32 lg:mr-36 mt-12 mx-3
             ">Popular Products</h3>
- <div class="flex ml-36 mt-12 mr-36  ">
+ <div class="popular lg:flex lg:ml-36 lg:mt-12 lg:mr-36 mt-12 mx-3 ">
 
 <div class="bg-[#F9DF8A] pl-6 pt-7 pr-8  rounded-3xl max-w-md">
 <h3 class="font-bold text-2xl text-[#FFFFFF] pb-4"> 30% OFF</h3>
@@ -136,7 +174,7 @@
     <img  class="pl-32" src="./c2-assets/vegetable-offer.png" alt="">
 </div>
 
-<div class="grid grid-cols-3  gap-4 ml-6">
+<div class=" grid grid-cols-2 lg:grid-cols-3  gap-4 lg:ml-6  mt-8">
    
 <div class="flex bg-[#FFFFFF] pl-2  pt-2 pr-2 rounded-2xl">
     <div>
@@ -152,7 +190,7 @@
     </div>
 </div>
 
-    <div class="flex bg-[#FFFFFF] pl-2  pt-2 pr-2 rounded-2xl">
+    <div class=" flex bg-[#FFFFFF] pl-2  pt-2 pr-2 rounded-2xl">
         <div>
             <img src="./c2-assets/Group 16 (1).png" alt="">
         </div>
@@ -185,7 +223,7 @@
 
 
 
-            <div class="flex bg-[#FFFFFF] pl-2  pt-2 pr-2 rounded-2xl">
+            <div class="lg:flex  hidden bg-[#FFFFFF] pl-2  pt-2 pr-2 rounded-2xl">
                 <div >
                     <img src="./c2-assets/Group 16 (2).png" alt="">
                 </div>
@@ -267,7 +305,7 @@
 
 
                           
-                                <div class="flex bg-[#FFFFFF] pl-2 pt-2 pr-2 rounded-2xl">
+                                <div class=" flex bg-[#FFFFFF] pl-2 pt-2 pr-2 rounded-2xl">
                                     <div >
                                         <img src="./c2-assets/Group 16 (3).png" alt="">
                                     </div>
@@ -294,22 +332,22 @@
 
 
  <!-- Arrival & Offers -->
-          <section class="mt-36 ml-36 mb-36 poppins-regular">
-            <h3 class="text-[#179800] font-semibold text-4xl">Arrival & Offers</h3>
+          <section class="lg:mt-36 lg:ml-36 lg:mb-36 poppins-regular">
+            <h3 class="text-[#179800] font-semibold text-4xl mx-3">Arrival & Offers</h3>
 
 
-<div class="flex gap-5 mt-12 mb-0 ">
+<div class="lg:flex gap-3 mt-12 mb-3 mx-3  ">
 
-<div class="flex bg-[#115414] rounded-2xl">
+<div class="flex bg-[#115414] rounded-2xl mb-6">
+    
 <div class="flex mt-4 ">
 
-<div class="ml-8">
-    <img class="mt-6"  src="./c2-assets/dawat-logo.png" alt="">
-    <button class="px-4 py-4 border bg-[#63B76D] text-[#FFFFFF] text-2xl rounded-3xl mt-6"> Cook Exotic Dishes</button>
-    <p class="text-4xl text-[#FFFFFF] mt-8 mb-12 ">UP to <span class="font-bold">20% OFF</span></p>
+<div class="lg:pl-4 pl-2">
+    <img class="lg:pt-6 pt-3 pb-3"  src="./c2-assets/dawat-logo.png" alt="">
+    <button class="lg:px-4 lg:py-4 px-1 py-2 border bg-[#63B76D] text-[#FFFFFF] text-base rounded-2xl lg:mt-4 mt-2">Cook Exotic Dishes</button>
+    <p class="lg:text-4xl text-xl text-[#FFFFFF] lg:mt-8 lg:mb-12 mt-6 ">UP to <span class="font-bold">20% OFF</span></p>
     
 </div>
-
 <div><img src="./c2-assets/dawat-mock-up.png" alt=""></div>
 </div>
 
@@ -317,17 +355,17 @@
 
 
 
-            <div class="flex bg-[#102861] rounded-2xl pr-12">
-                <div class="flex">
+            <div class="flex bg-[#102861] rounded-2xl lg:pr-12 mb-6">
+                <div class="flex gap-12">
                 
-                <div class="pl-4">
-                    <img  class="pt-6" src="./c2-assets/india-gate-logo.png" alt="">
-                    <button class="px-4 py-4 border bg-[#2A4D97] text-[#FFFFFF] text-2xl rounded-3xl mt-4">World’s No.1 Rice</button>
-                    <p class="text-4xl text-[#FFFFFF] mt-6">UP to <span class="font-bold">40% OFF</span></p>
+                <div class="lg:pl-4 pl-2">
+                    <img  class="lg:pt-6 pt-3" src="./c2-assets/india-gate-logo.png" alt="">
+                    <button class="lg:px-4 lg:py-4 px-2 py-2  border bg-[#2A4D97] text-[#FFFFFF] text-base rounded-2xl lg:mt-4 mt-2">World’s No.1 Rice</button>
+                    <p class="lg:text-xl text-xl text-[#FFFFFF] mt-6">UP to <span class="font-bold">40% OFF</span></p>
                     
                 </div>
                 
-                <div class="pt-12"><img src="./c2-assets/india-gate-mock-up.png" alt=""></div>
+                <div class="lg:pt-12 pt-6 "><img src="./c2-assets/india-gate-mock-up.png" alt=""></div>
                 </div>
                 
                             </div>
@@ -337,8 +375,8 @@
 
 
 <!-- Fresh vegetable -->
-          <section class="ml-36 mt-32 mr-36 mb-36">
-                <h3 class="text-[#179800] font-semibold text-4xl">Fresh Vegetables</h3>
+          <section class="lg:ml-36 lg:mt-32 mt-16 lg:mr-36 mb-80">
+                <h3 class="text-[#179800] font-semibold text-4xl mx-3">Fresh Vegetables</h3>
                 <div class="grid grid-cols-1  lg:grid-cols-3 gap-4 mt-11">
                     <!--card container -->
                 
@@ -375,41 +413,25 @@
 
     </main>
 
-<!-- <section class="bg-[#EFEBE3]  max-w-screen-xl ml-36 mr-36 rounded-3xl ">
-    <div class="flex">
-<div>
-    <img src="./c2-assets/vegetable-busket.png" alt="">
-</div>
-
-<div>
-<h3 class="font-semibold text-4xl ">Get Grocery News!</h3>
-<p>Exclusive training tips, ticks, product deals and more</p>
-<input type="email" placeholder="Enter Email">
-<br>
-<button class="bg-[#179800]">Subscribe</button>
-
-</div>
-
-    </div> -->
 
 
 
 
-<footer class="relative">
+<footer class=" footers relative">
 
     <section>
-        <section class="bg-[#EFEBE3]  max-w-screen-xl ml-36 mr-36  rounded-3xl absolute ">
-            <div class="flex ">
-        <div>
+        <section class="bg-[#EFEBE3]  -top-52 rounded-3xl  lg:ml-36  lg:mr-36 mx-6 absolute ">
+            <div class="lg:flex">
+        <div class="lg:mx-20 lg:my-12">
             <img src="./c2-assets/vegetable-busket.png" alt="">
         </div>
         
-        <div>
-        <h3 class="font-semibold text-4xl ">Get Grocery News!</h3>
-        <p>Exclusive training tips, ticks, product deals and more</p>
-        <input type="email" placeholder="Enter Email">
+        <div class="lg:mx-20 lg:my-12 ">
+        <h3 class="font-semibold text-4xl mt-6">Get Grocery News!</h3>
+        <p class="text-xl lg:mt-6">Exclusive training tips, ticks, product deals and more</p>
+        <input class="rounded-lg px-6 py-4 lg:mt-6" type="email" placeholder="Enter Email">
         <br>
-        <button class="bg-[#179800]">Subscribe</button>
+        <button class="bg-[#179800] rounded-lg lg:mt-6 text-[#FFFFFF] px-2 py-2">Subscribe</button>
         
         </div>
         
@@ -417,15 +439,36 @@
 
     </section>
 
-    <section class="bg-[#179800] text-[#FFFFFF] justify-center  mb-36px mt-36 pt-2 pb-36">
-        <div class="flex pt-64 place-content-evenly ">
+
+    <!-- for small device footer -->
+        <section class="bg-[#EFEBE3]  -top-60 rounded-3xl  lg:ml-36  lg:mr-36 mx-6 absolute lg:hidden">
+            <div class="lg:flex">
+        <div class="lg:mx-20 lg:my-12">
+            <img src="./c2-assets/vegetable-busket.png" alt="">
+        </div>
+        
+        <div class="lg:mx-20 lg:my-12 justify-center text-center">
+        <h3 class="font-bold text-2xl mt-6 text-[#179800]">Get Grocery News!</h3>
+        <p class="text-xl lg:mt-6">Exclusive training tips, ticks, product deals and more</p>
+        <input class="rounded-lg px-6 py-4 mt-6" type="email" placeholder="Enter Email">
+        <br>
+        <button class="bg-[#179800] rounded-lg mt-6 mb-6 text-[#FFFFFF] px-2 py-2">Subscribe</button>
+        
+        </div>
+        
+            </div>
+
+    </section>
+
+    <section class="bg-[#179800] text-[#FFFFFF] justify-center  mb-36px lg:mt-80 pt-2 pb-36">
+        <div class="footers flex pt-96 place-content-evenly ">
 
 <div>
-    <img src="./c2-assets/logo-footer.png" alt="">
-    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+    <img class="mx-3" src="./c2-assets/logo-footer.png" alt="">
+    <p class="mx-3 pt-6">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
 </div>
 
-<div>
+<div class="mx-3 pt-6">
 
     <ul>
        
@@ -436,8 +479,8 @@
     </ul>
 </div>
 
-<div>
-  <h3>Follow Us </h3>
+<div class="mx-3 pt-6">
+  <h3 >Follow Us </h3>
   <div class="flex">
                 <img  class="bg-[#FFFFFFF]"  src="./c2-assets/Vector (2).png" alt="">
                 <img class="bg-[#FFFFFFF]" src="./c2-assets/Vector (3).png" alt="">
@@ -448,6 +491,9 @@
 
     
     </section>
+
+
+
 </footer>
 </body>
 </html>
